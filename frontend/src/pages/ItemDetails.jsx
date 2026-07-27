@@ -13,7 +13,7 @@ function ItemDetails() {
   const fetchItem = async () => {
   try {
     const res = await axios.get(
-      `http://localhost:5000/api/clothes/${id}`
+      `http://https://initial-rewear-marketplace-project-1.onrender.com/api/clothes/${id}`
     );
 
     console.log("Item Data:", res.data);
@@ -31,7 +31,7 @@ function ItemDetails() {
       );
 
       await axios.post(
-        "http://localhost:5000/api/swaps",
+        "http://https://initial-rewear-marketplace-project-1.onrender.com/api/swaps",
         {
           requesterName:
             user?.name || "Shagun",

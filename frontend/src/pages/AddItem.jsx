@@ -26,7 +26,7 @@ function AddItem() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/clothes",
+        "http://https://initial-rewear-marketplace-project-1.onrender.com/api/clothes",
         formData
       );
 

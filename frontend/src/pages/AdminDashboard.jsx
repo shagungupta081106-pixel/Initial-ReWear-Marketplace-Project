@@ -14,11 +14,11 @@ function AdminDashboard() {
   const fetchData = async () => {
     try {
       const clothesRes = await axios.get(
-        "http://localhost:5000/api/clothes"
+        "http://https://initial-rewear-marketplace-project-1.onrender.com/api/clothes"
       );
 
       const swapsRes = await axios.get(
-        "http://localhost:5000/api/swaps"
+        "http://https://initial-rewear-marketplace-project-1.onrender.com/api/swaps"
       );
 
       setListings(clothesRes.data.length);

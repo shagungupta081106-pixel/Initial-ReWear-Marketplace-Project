@@ -11,7 +11,7 @@ if (!confirmDelete) return;
 
 try {
   await axios.delete(
-    `http://localhost:5000/api/clothes/${item._id}`
+    `http://https://initial-rewear-marketplace-project-1.onrender.com/api/clothes/${item._id}`
   );
 
   alert("Item Deleted Successfully");
