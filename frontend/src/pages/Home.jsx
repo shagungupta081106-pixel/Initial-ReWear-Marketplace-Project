@@ -15,7 +15,7 @@ fetchClothes();
 const fetchClothes = async () => {
 try {
 const res = await axios.get(
-"http://localhost:5000/api/clothes"
+"http://https://initial-rewear-marketplace-project-1.onrender.com/api/clothes"
 );
 
   setClothes(res.data);

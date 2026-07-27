@@ -11,7 +11,7 @@ function SwapRequests() {
   const fetchRequests = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/swaps"
+        "http://https://initial-rewear-marketplace-project-1.onrender.com/api/swaps"
       );
 
       setRequests(res.data);
@@ -23,7 +23,7 @@ function SwapRequests() {
   const updateStatus = async (id, status) => {
     try {
       await axios.put(
-        `http://localhost:5000/api/swaps/${id}`,
+        `http://https://initial-rewear-marketplace-project-1.onrender.com/api/swaps/${id}`,
         { status }
       );
 

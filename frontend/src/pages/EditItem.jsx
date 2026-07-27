@@ -23,7 +23,7 @@ function EditItem() {
   const fetchItem = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/clothes/${id}`
+        `http://https://initial-rewear-marketplace-project-1.onrender.com/api/clothes/${id}`
       );
 
       setFormData(res.data);
@@ -44,7 +44,7 @@ function EditItem() {
 
     try {
       await axios.put(
-        `http://localhost:5000/api/clothes/${id}`,
+        `http://https://initial-rewear-marketplace-project-1.onrender.com/api/clothes/${id}`,
         formData
       );
 
